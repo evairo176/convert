@@ -151,18 +151,18 @@ const letterToNumber = (char: string): number => {
   return map[char.toUpperCase()] ?? 0;
 };
 
-const reverseMap: Record<number, string> = {
-  0: "A",
-  1: "B",
-  2: "E",
-  3: "F",
-  4: "I",
-  5: "J",
-  6: "O",
-  7: "P",
-  8: "U",
-  9: "V",
-};
+// const reverseMap: Record<number, string> = {
+//   0: "A",
+//   1: "B",
+//   2: "E",
+//   3: "F",
+//   4: "I",
+//   5: "J",
+//   6: "O",
+//   7: "P",
+//   8: "U",
+//   9: "V",
+// };
 
 const convertToLetters_k = (num: number): string => {
   const map = ["A", "B", "E", "F", "I", "J", "O", "P", "U", "V"];
@@ -182,7 +182,7 @@ const convertToLetters_k = (num: number): string => {
   breakdown.push(0);
 
   // Sisa setelah penjumlahan awal
-  const remaining = num - sum;
+  // const remaining = num - sum;
 
   // Tambahkan 1 sebanyak remaining (asal total 9 elemen)
   for (let i = 0; breakdown.length < 9; i++) {

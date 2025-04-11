@@ -186,7 +186,9 @@ export default function OutputTable({ data }: { data: Result[] }) {
                   <td className="border border-gray-300 p-2 font-mono">
                     {sampleOutput}
                   </td>
-                  <td className="border border-gray-300 p-2 font-mono">???</td>
+                  <td className="border border-gray-300 p-2 font-mono">
+                    {explanation}
+                  </td>
                   <td className="border border-gray-300 p-2 font-bold">
                     {finalDigits}
                   </td>
